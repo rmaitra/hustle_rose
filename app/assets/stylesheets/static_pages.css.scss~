@@ -2,7 +2,4 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body { 
-    background: #000000 url(image_path('bg.jpg')) no-repeat;
-    
-}
+body { background-image: url(image_path('bg.jpg')); }

@@ -28,7 +28,6 @@ body {
 
 #main_title{
     font-size:120px;
-    font-weight:bold;
     color:#E6005C;
 }
 
