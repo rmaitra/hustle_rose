@@ -1,0 +1,29 @@
+<!--<h1>Listing lyrics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lyrics.each do |lyric| %>
+      <tr>
+        <td><%= lyric.title %></td>
+        <td><%= lyric.description %></td>
+        <td><%= link_to 'Show', lyric %></td>
+        <td><%= link_to 'Edit', edit_lyric_path(lyric) %></td>
+        <td><%= link_to 'Destroy', lyric, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lyric', new_lyric_path %>-->

@@ -1,0 +1,36 @@
+<!--<h1>Listing home_posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @home_posts.each do |home_post| %>
+      <tr>
+        <td><%= home_post.title %></td>
+        <td><%= home_post.description %></td>
+        <td><%= link_to 'Show', home_post %></td>
+        <td><%= link_to 'Edit', edit_home_post_path(home_post) %></td>
+        <td><%= link_to 'Destroy', home_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Home post', new_home_post_path %>-->
+<% @home_posts.each do |post| %>
+    <div class = 'section'>
+        <h3 class = 'title'><%= post.title %></h3>
+        <img src="<%= post.link %>" height="300" width="300">
+        <p><%= post.description.html_safe %></p>
+    </div>
+<% end %>

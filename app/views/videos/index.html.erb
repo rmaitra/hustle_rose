@@ -1,0 +1,57 @@
+<!--<h1>Listing videos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Link</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @videos.each do |video| %>
+      <tr>
+        <td><%= video.title %></td>
+        <td><%= video.link %></td>
+        <td><%= video.description %></td>
+        <td><%= link_to 'Show', video %></td>
+        <td><%= link_to 'Edit', edit_video_path(video) %></td>
+        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Video', new_video_path %>-->
+<% @videos.each do |post| %>
+    <div class = 'section'>
+        <h3 class = 'title'><%= post.title %></h3>
+        <div  id = 'video'><%= post.link.html_safe  %></div>
+        <p><%= post.description.html_safe %></p>
+    </div>
+<% end %>
+
+<!--<script type = "text/javascript">
+            function resize_video(){
+                console.log('here');
+                var w=window.innerWidth;
+                var h=window.innerHeight;
+                v=document.getElementById("vid");
+                v.setAttribute('width', w);
+                v.setAttribute('height', h-50);
+            }
+    </script>       
+
+   <div id = "bg">
+        <iframe id = "vid" title="YouTube video player" 
+                    type="text/html" width="425" height="349" 
+                    src="http://www.youtube.com/embed/AMDcw_mkU7U?wmode=transparent&autoplay=1&rel=0" 
+                    frameborder="0" wmode="Opaque">
+        </iframe> 
+   </div>-->

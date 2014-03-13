@@ -1,0 +1,35 @@
+<!--<h1>Listing contact_posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contact_posts.each do |contact_post| %>
+      <tr>
+        <td><%= contact_post.title %></td>
+        <td><%= contact_post.description %></td>
+        <td><%= link_to 'Show', contact_post %></td>
+        <td><%= link_to 'Edit', edit_contact_post_path(contact_post) %></td>
+        <td><%= link_to 'Destroy', contact_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contact post', new_contact_post_path %>-->
+<% @contact_posts.each do |post| %>
+    <div class = 'section'>
+        <h3 class = 'title'><%= post.title %></h3>
+        <p><%= post.description.html_safe %></p>
+    </div>
+<% end %>

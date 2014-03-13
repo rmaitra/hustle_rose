@@ -1,0 +1,8 @@
+<h1>New video</h1>
+
+<p> You can go to youtube and right click the video to grab the embed video. Paste in Link.<p>
+
+
+<%= render 'form' %>
+
+<%= link_to 'Back', videos_path %>

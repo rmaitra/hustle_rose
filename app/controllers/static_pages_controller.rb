@@ -1,0 +1,20 @@
+class StaticPagesController < ApplicationController
+  before_filter :authenticate, :except => [:home, :contact]
+  
+  def home
+      @home_posts = HomePost.all
+  end
+
+  def admin
+      @posts = Post.all
+      @videos = Video.all
+      @musics = Music.all
+      @lyrics = Lyric.all
+      @home_posts = HomePost.all
+      @contact_posts = ContactPost.all 
+  end
+  
+  def contact
+      @contact_posts = ContactPost.all 
+  end
+end
