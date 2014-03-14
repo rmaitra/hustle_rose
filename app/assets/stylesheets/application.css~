@@ -12,9 +12,6 @@
  *= require_tree .
  */
 
-body {
- background: #000000 url(/assets/bg.jpg) no-repeat;
-}
 
 #bg{
     position:fixed;
@@ -27,8 +24,14 @@ body {
 }
 
 #main_title{
-    font-size:120px;
-    color:#E6005C;
+    font-size:200px;
+    color:#fff;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    position:fixed;
+    z-index:-10;
+    top:0px;
+    left:200px;
 }
 
 #main_container{

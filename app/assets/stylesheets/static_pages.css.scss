@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body { 
-    background: #000000 url(image_path('bg.jpg')) no-repeat;
+    background: #000000 url(image_path('bg.jpg')) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     
 }
