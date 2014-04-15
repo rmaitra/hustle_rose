@@ -19,19 +19,18 @@
 }
 
 #main_title, #navlogo, .title{
+ font-family: 'Rye', cursive;
  font-family: 'Montserrat Subrayada', sans-serif;   
     
 }
 
 #main_title{
-    font-size:200px;
+    font-size:100px;
     color:#fff;
-    opacity:0.5;
-    filter:alpha(opacity=50);
-    position:fixed;
-    z-index:-10;
-    top:0px;
-    left:200px;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    font-family: 'Rye', cursive;
+    margin-bottom:-20px;
 }
 
 #main_container{
